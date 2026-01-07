@@ -1,0 +1,6 @@
+opencv-python
+easyocr
+Pillow
+imagehash
+numpy
+yt-dlp
