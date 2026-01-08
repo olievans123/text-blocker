@@ -1,4 +1,4 @@
-# Text Blocker
+# OCR Text Blocker for Video
 
 Automatically detect and censor text in videos using OCR. Perfect for **comprehensible input** — block subtitles, captions, or on-screen text to immerse yourself in your target language without the temptation to read.
 
