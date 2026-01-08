@@ -208,6 +208,25 @@ def build_ffmpeg_filter(box_ranges: list[tuple[int, int, int, int, float, float]
     return ",".join(filters) if filters else "null"
 
 
+def is_youtube_url(value: str) -> bool:
+    lower = value.lower()
+    return lower.startswith(("http://", "https://")) and ("youtube.com" in lower or "youtu.be" in lower)
+
+
+def resolve_youtube_id(url: str, verbose: bool) -> str:
+    cmd = ["yt-dlp", "--no-playlist", "--print", "id", url]
+    if not verbose:
+        cmd += ["--quiet", "--no-warnings"]
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    if result.returncode != 0:
+        err = result.stderr.strip() or "yt-dlp failed to resolve video id"
+        raise RuntimeError(err)
+    ids = [line.strip() for line in result.stdout.splitlines() if line.strip()]
+    if not ids:
+        raise RuntimeError("yt-dlp did not return a video id")
+    return ids[-1]
+
+
 def find_downloaded_file(temp_dir: str, video_id: str) -> Optional[Path]:
     candidates = [
         p for p in Path(temp_dir).glob(f"{video_id}.*")
@@ -247,6 +266,23 @@ def download_video(
     if result.returncode != 0:
         return None
     return find_downloaded_file(temp_dir, video_id)
+
+
+def download_youtube_url(
+    url: str,
+    temp_dir: str,
+    download_format: str,
+    merge_format: Optional[str],
+    verbose: bool,
+) -> tuple[str, Optional[Path]]:
+    video_id = resolve_youtube_id(url, verbose=verbose)
+    return video_id, download_video(
+        video_id,
+        temp_dir=temp_dir,
+        download_format=download_format,
+        merge_format=merge_format,
+        verbose=verbose,
+    )
 
 
 def process_playlist(
@@ -328,6 +364,151 @@ def process_playlist(
         finally:
             if not keep_downloads and input_file.exists():
                 input_file.unlink()
+
+
+def list_video_files(input_dir: str, recursive: bool) -> list[Path]:
+    exts = {".mp4", ".mkv", ".webm", ".mov", ".avi", ".flv", ".mpg", ".mpeg", ".m4v", ".3gp"}
+    base = Path(input_dir)
+    if recursive:
+        items = base.rglob("*")
+    else:
+        items = base.glob("*")
+    return sorted([p for p in items if p.is_file() and p.suffix.lower() in exts])
+
+
+def process_folder(
+    input_dir: str,
+    output_dir: str,
+    recursive: bool,
+    skip_existing: bool,
+    languages: list[str],
+    ocr_height: int,
+    sample_fps: float,
+    padding: int,
+    merge_pad: int,
+    scene_threshold: int,
+    skip_similar: bool,
+    force_interval: float,
+    max_filters: int,
+    quality: str,
+    verbose: bool,
+) -> None:
+    input_path = Path(input_dir)
+    output_path = Path(output_dir)
+    output_path.mkdir(parents=True, exist_ok=True)
+
+    files = list_video_files(input_dir, recursive=recursive)
+    if not files:
+        print("No video files found")
+        return
+
+    total = len(files)
+    for idx, video_path in enumerate(files, 1):
+        relative = video_path.relative_to(input_path)
+        output_parent = output_path / relative.parent
+        output_parent.mkdir(parents=True, exist_ok=True)
+        output_file = output_parent / f"{relative.stem}_blocked.mp4"
+
+        print(f"\n=== Processing {idx}/{total}: {relative} ===")
+        if skip_existing and output_file.exists():
+            print("Already processed, skipping...")
+            continue
+
+        try:
+            process_video(
+                str(video_path),
+                str(output_file),
+                languages=languages,
+                ocr_height=ocr_height,
+                sample_fps=sample_fps,
+                padding=padding,
+                merge_pad=merge_pad,
+                scene_threshold=scene_threshold,
+                skip_similar=skip_similar,
+                force_interval=force_interval,
+                max_filters=max_filters,
+                quality=quality,
+                verbose=verbose,
+            )
+            print(f"Done: {output_file}")
+        except Exception as exc:
+            print(f"Error processing {video_path}: {exc}")
+            if output_file.exists():
+                output_file.unlink()
+
+
+def process_youtube_video(
+    url: str,
+    output: str,
+    temp_dir: str,
+    download_format: str,
+    merge_format: Optional[str],
+    keep_downloads: bool,
+    skip_existing: bool,
+    languages: list[str],
+    ocr_height: int,
+    sample_fps: float,
+    padding: int,
+    merge_pad: int,
+    scene_threshold: int,
+    skip_similar: bool,
+    force_interval: float,
+    max_filters: int,
+    quality: str,
+    verbose: bool,
+) -> None:
+    if shutil.which("yt-dlp") is None:
+        raise RuntimeError("yt-dlp not found in PATH. Install with: pip install yt-dlp")
+
+    temp_path = Path(temp_dir)
+    temp_path.mkdir(parents=True, exist_ok=True)
+
+    output_path = Path(output)
+    output_file: Path
+
+    print("Downloading...")
+    video_id, input_file = download_youtube_url(
+        url,
+        temp_dir=temp_dir,
+        download_format=download_format,
+        merge_format=merge_format,
+        verbose=verbose,
+    )
+    if input_file is None:
+        raise RuntimeError("Download failed")
+
+    if output_path.exists() and output_path.is_dir():
+        output_file = output_path / f"{video_id}_blocked.mp4"
+    else:
+        output_file = output_path
+
+    if skip_existing and output_file.exists():
+        print("Already processed, skipping...")
+        if not keep_downloads and input_file.exists():
+            input_file.unlink()
+        return
+
+    try:
+        print("Blocking text...")
+        process_video(
+            str(input_file),
+            str(output_file),
+            languages=languages,
+            ocr_height=ocr_height,
+            sample_fps=sample_fps,
+            padding=padding,
+            merge_pad=merge_pad,
+            scene_threshold=scene_threshold,
+            skip_similar=skip_similar,
+            force_interval=force_interval,
+            max_filters=max_filters,
+            quality=quality,
+            verbose=verbose,
+        )
+        print(f"Done: {output_file}")
+    finally:
+        if not keep_downloads and input_file.exists():
+            input_file.unlink()
 
 
 def process_video(
@@ -498,7 +679,7 @@ def main() -> None:
     parser.add_argument(
         "-o", "--output",
         required=True,
-        help="Output video file (or output directory when using --playlist)",
+        help="Output video file (or output directory when using --playlist/--folder)",
     )
     parser.add_argument(
         "--playlist",
@@ -506,9 +687,24 @@ def main() -> None:
         help="Treat input as a YouTube playlist URL and process all videos",
     )
     parser.add_argument(
+        "--youtube",
+        action="store_true",
+        help="Treat input as a single YouTube video URL",
+    )
+    parser.add_argument(
+        "--folder",
+        action="store_true",
+        help="Treat input as a folder of videos",
+    )
+    parser.add_argument(
+        "--recursive",
+        action="store_true",
+        help="Recursively process subfolders when using --folder",
+    )
+    parser.add_argument(
         "--temp-dir",
         default="temp_downloads",
-        help="Temp folder for downloads when using --playlist (default: temp_downloads)",
+        help="Temp folder for downloads when using --playlist/--youtube (default: temp_downloads)",
     )
     parser.add_argument(
         "--download-format",
@@ -523,13 +719,13 @@ def main() -> None:
     parser.add_argument(
         "--keep-downloads",
         action="store_true",
-        help="Keep downloaded files when using --playlist",
+        help="Keep downloaded files when using --playlist/--youtube",
     )
     parser.add_argument(
         "--skip-existing",
         action=argparse.BooleanOptionalAction,
         default=True,
-        help="Skip already-processed videos when using --playlist (default: true)",
+        help="Skip already-processed videos when using --playlist/--folder/--youtube (default: true)",
     )
     parser.add_argument(
         "--languages", "-l",
@@ -595,13 +791,51 @@ def main() -> None:
 
     args = parser.parse_args()
 
+    if args.playlist and args.youtube:
+        print("Error: --playlist and --youtube cannot be used together", file=sys.stderr)
+        sys.exit(1)
+    if args.playlist and args.folder:
+        print("Error: --playlist and --folder cannot be used together", file=sys.stderr)
+        sys.exit(1)
+    if args.youtube and args.folder:
+        print("Error: --youtube and --folder cannot be used together", file=sys.stderr)
+        sys.exit(1)
+
+    mode = "file"
     if args.playlist:
+        mode = "playlist"
+    elif args.youtube or (args.input and is_youtube_url(args.input)):
+        mode = "youtube"
+    elif args.folder or (args.input and Path(args.input).exists() and Path(args.input).is_dir()):
+        mode = "folder"
+
+    if mode == "playlist":
         if not args.input:
             print("Error: Playlist URL is required when using --playlist", file=sys.stderr)
             sys.exit(1)
         output_dir = Path(args.output)
         if output_dir.exists() and not output_dir.is_dir():
             print(f"Error: Output must be a directory for playlists: {args.output}", file=sys.stderr)
+            sys.exit(1)
+        temp_dir = Path(args.temp_dir)
+        if temp_dir.exists() and not temp_dir.is_dir():
+            print(f"Error: Temp path must be a directory: {args.temp_dir}", file=sys.stderr)
+            sys.exit(1)
+    elif mode == "folder":
+        if not args.input:
+            print("Error: Input folder is required", file=sys.stderr)
+            sys.exit(1)
+        input_path = Path(args.input)
+        if not input_path.exists() or not input_path.is_dir():
+            print(f"Error: Input folder not found: {args.input}", file=sys.stderr)
+            sys.exit(1)
+        output_dir = Path(args.output)
+        if output_dir.exists() and not output_dir.is_dir():
+            print(f"Error: Output must be a directory for folders: {args.output}", file=sys.stderr)
+            sys.exit(1)
+    elif mode == "youtube":
+        if not args.input:
+            print("Error: YouTube URL is required", file=sys.stderr)
             sys.exit(1)
         temp_dir = Path(args.temp_dir)
         if temp_dir.exists() and not temp_dir.is_dir():
@@ -634,10 +868,49 @@ def main() -> None:
             print("Auto-detect mode: using multi-language model")
 
     try:
-        if args.playlist:
+        if mode == "playlist":
             process_playlist(
                 args.input,
                 output_dir=args.output,
+                temp_dir=args.temp_dir,
+                download_format=args.download_format,
+                merge_format=args.download_merge_format or None,
+                keep_downloads=args.keep_downloads,
+                skip_existing=args.skip_existing,
+                languages=languages,
+                ocr_height=args.ocr_height,
+                sample_fps=args.sample_fps,
+                padding=args.padding,
+                merge_pad=args.merge_pad,
+                scene_threshold=args.scene_threshold,
+                skip_similar=args.skip_similar,
+                force_interval=args.force_interval,
+                max_filters=args.max_filters,
+                quality=args.quality,
+                verbose=args.verbose,
+            )
+        elif mode == "folder":
+            process_folder(
+                args.input,
+                output_dir=args.output,
+                recursive=args.recursive,
+                skip_existing=args.skip_existing,
+                languages=languages,
+                ocr_height=args.ocr_height,
+                sample_fps=args.sample_fps,
+                padding=args.padding,
+                merge_pad=args.merge_pad,
+                scene_threshold=args.scene_threshold,
+                skip_similar=args.skip_similar,
+                force_interval=args.force_interval,
+                max_filters=args.max_filters,
+                quality=args.quality,
+                verbose=args.verbose,
+            )
+        elif mode == "youtube":
+            process_youtube_video(
+                args.input,
+                output=args.output,
                 temp_dir=args.temp_dir,
                 download_format=args.download_format,
                 merge_format=args.download_merge_format or None,

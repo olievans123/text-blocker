@@ -59,6 +59,16 @@ Process a YouTube playlist (downloads to `temp_downloads`, outputs to `output`):
 python text_blocker.py --playlist "https://www.youtube.com/playlist?list=..." -o output -l en -v
 ```
 
+Process a single YouTube video:
+```bash
+python text_blocker.py "https://www.youtube.com/watch?v=VIDEO_ID" -o blocked.mp4 -l en -v
+```
+
+Process a folder of videos:
+```bash
+python text_blocker.py --folder /path/to/videos -o output -l en -v
+```
+
 ## How It Works
 
 1. Extracts frames at a configurable sample rate
