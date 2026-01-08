@@ -58,7 +58,7 @@ Process a YouTube playlist (downloads to `temp_downloads`, outputs to `output`):
 ```bash
 python text_blocker.py --playlist "https://www.youtube.com/playlist?list=..." -o output -l en -v
 ```
-Playlist and YouTube outputs are named using the video title plus ID for readability.
+Playlist and YouTube outputs are named using the video title (ID is used only if the title is missing).
 
 Process a single YouTube video:
 ```bash

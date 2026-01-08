@@ -235,7 +235,7 @@ def build_output_filename(title: str, video_id: str) -> str:
     safe_title = sanitize_filename(title)
     if not safe_title or safe_title.lower() == video_id.lower():
         return f"{video_id}_blocked.mp4"
-    return f"{safe_title}_{video_id}_blocked.mp4"
+    return f"{safe_title}_blocked.mp4"
 
 
 def resolve_youtube_metadata(url: str, verbose: bool) -> tuple[str, str]:
