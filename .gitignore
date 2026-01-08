@@ -5,3 +5,4 @@
 *.mov
 __pycache__/
 *.pyc
+processing.log

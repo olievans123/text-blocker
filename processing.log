@@ -1,294 +1,0 @@
-Fetching playlist...
-
-=== Processing 1/68: E4h-8rw2GlY ===
-Downloading...
-[youtube] Extracting URL: https://www.youtube.com/watch?v=E4h-8rw2GlY
-[youtube] E4h-8rw2GlY: Downloading webpage
-[youtube] E4h-8rw2GlY: Downloading tv client config
-[youtube] E4h-8rw2GlY: Downloading player 721caf0b-main
-[youtube] E4h-8rw2GlY: Downloading tv player API JSON
-[youtube] E4h-8rw2GlY: Downloading android sdkless player API JSON
-[youtube] [jsc:deno] Solving JS challenges using deno
-[info] E4h-8rw2GlY: Downloading 1 format(s): 247+251
-[download] Sleeping 5.00 seconds as required by the site...
-[download] Destination: temp_downloads/E4h-8rw2GlY.f247.webm
-[download]   0.0% of   59.77MiB at  781.94KiB/s ETA 01:20[download]   0.0% of   59.77MiB at  842.00KiB/s ETA 01:13[download]   0.0% of   59.77MiB at    1.56MiB/s ETA 00:38[download]   0.0% of   59.77MiB at    2.87MiB/s ETA 00:20[download]   0.1% of   59.77MiB at    2.88MiB/s ETA 00:20[download]   0.1% of   59.77MiB at    5.22MiB/s ETA 00:11[download]   0.2% of   59.77MiB at    5.96MiB/s ETA 00:10[download]   0.4% of   59.77MiB at    7.71MiB/s ETA 00:07[download]   0.8% of   59.77MiB at   12.38MiB/s ETA 00:04[download]   1.7% of   59.77MiB at   18.98MiB/s ETA 00:03[download]   3.3% of   59.77MiB at   29.86MiB/s ETA 00:01[download]   6.7% of   59.77MiB at   37.64MiB/s ETA 00:01[download]  13.4% of   59.77MiB at   42.88MiB/s ETA 00:01[download]  16.0% of   59.77MiB at   44.11MiB/s ETA 00:01[download]  16.0% of   59.77MiB at  Unknown B/s ETA Unknown[download]  16.0% of   59.77MiB at  Unknown B/s ETA Unknown[download]  16.0% of   59.77MiB at  Unknown B/s ETA Unknown[download]  16.0% of   59.77MiB at  Unknown B/s ETA Unknown[download]  16.0% of   59.77MiB at  Unknown B/s ETA Unknown[download]  16.1% of   59.77MiB at   55.47MiB/s ETA 00:00  [download]  16.2% of   59.77MiB at   80.26MiB/s ETA 00:00[download]  16.4% of   59.77MiB at   65.31MiB/s ETA 00:00[download]  16.8% of   59.77MiB at   22.59MiB/s ETA 00:02[download]  17.7% of   59.77MiB at   35.09MiB/s ETA 00:01[download]  19.3% of   59.77MiB at   49.46MiB/s ETA 00:00[download]  22.7% of   59.77MiB at   55.78MiB/s ETA 00:00[download]  29.4% of   59.77MiB at   61.45MiB/s ETA 00:00[download]  32.4% of   59.77MiB at   53.96MiB/s ETA 00:00[download]  32.4% of   59.77MiB at  Unknown B/s ETA Unknown[download]  32.4% of   59.77MiB at  Unknown B/s ETA Unknown[download]  32.4% of   59.77MiB at  Unknown B/s ETA Unknown[download]  32.5% of   59.77MiB at   12.69MiB/s ETA 00:03  [download]  32.5% of   59.77MiB at   20.54MiB/s ETA 00:01[download]  32.5% of   59.77MiB at   33.73MiB/s ETA 00:01[download]  32.6% of   59.77MiB at   54.90MiB/s ETA 00:00[download]  32.8% of   59.77MiB at   88.31MiB/s ETA 00:00[download]  33.3% of   59.77MiB at   94.82MiB/s ETA 00:00[download]  34.1% of   59.77MiB at   33.82MiB/s ETA 00:01[download]  35.8% of   59.77MiB at   47.00MiB/s ETA 00:00[download]  39.1% of   59.77MiB at   49.94MiB/s ETA 00:00[download]  45.8% of   59.77MiB at   57.76MiB/s ETA 00:00[download]  48.5% of   59.77MiB at   32.35MiB/s ETA 00:00[download]  48.5% of   59.77MiB at  Unknown B/s ETA Unknown[download]  48.5% of   59.77MiB at    2.62MiB/s ETA 00:11  [download]  48.5% of   59.77MiB at    4.12MiB/s ETA 00:07[download]  48.5% of   59.77MiB at    6.72MiB/s ETA 00:04[download]  48.5% of   59.77MiB at   10.75MiB/s ETA 00:02[download]  48.6% of   59.77MiB at   17.90MiB/s ETA 00:01[download]  48.7% of   59.77MiB at   26.62MiB/s ETA 00:01[download]  48.9% of   59.77MiB at   42.91MiB/s ETA 00:00[download]  49.3% of   59.77MiB at   68.47MiB/s ETA 00:00[download]  50.1% of   59.77MiB at   89.82MiB/s ETA 00:00[download]  51.8% of   59.77MiB at   40.32MiB/s ETA 00:00[download]  55.1% of   59.77MiB at   42.82MiB/s ETA 00:00[download]  61.8% of   59.77MiB at   48.59MiB/s ETA 00:00[download]  64.8% of   59.77MiB at   51.64MiB/s ETA 00:00[download]  64.8% of   59.77MiB at  Unknown B/s ETA Unknown[download]  64.8% of   59.77MiB at    2.91MiB/s ETA 00:07  [download]  64.8% of   59.77MiB at    4.62MiB/s ETA 00:04[download]  64.8% of   59.77MiB at    7.67MiB/s ETA 00:02[download]  64.9% of   59.77MiB at   12.38MiB/s ETA 00:01[download]  64.9% of   59.77MiB at   10.96MiB/s ETA 00:01[download]  65.0% of   59.77MiB at   18.65MiB/s ETA 00:01[download]  65.2% of   59.77MiB at   32.78MiB/s ETA 00:00[download]  65.7% of   59.77MiB at   58.24MiB/s ETA 00:00[download]  66.5% of   59.77MiB at   89.96MiB/s ETA 00:00[download]  68.2% of   59.77MiB at   22.59MiB/s ETA 00:00[download]  71.5% of   59.77MiB at   36.90MiB/s ETA 00:00[download]  78.2% of   59.77MiB at   47.33MiB/s ETA 00:00[download]  81.1% of   59.77MiB at   46.69MiB/s ETA 00:00[download]  81.1% of   59.77MiB at  Unknown B/s ETA Unknown[download]  81.1% of   59.77MiB at  Unknown B/s ETA Unknown[download]  81.2% of   59.77MiB at  Unknown B/s ETA Unknown[download]  81.2% of   59.77MiB at   13.01MiB/s ETA 00:00  [download]  81.2% of   59.77MiB at   20.65MiB/s ETA 00:00[download]  81.2% of   59.77MiB at   33.82MiB/s ETA 00:00[download]  81.3% of   59.77MiB at   52.98MiB/s ETA 00:00[download]  81.6% of   59.77MiB at   72.27MiB/s ETA 00:00[download]  82.0% of   59.77MiB at   87.08MiB/s ETA 00:00[download]  82.8% of   59.77MiB at   82.14MiB/s ETA 00:00[download]  84.5% of   59.77MiB at   72.75MiB/s ETA 00:00[download]  87.8% of   59.77MiB at   73.82MiB/s ETA 00:00[download]  94.5% of   59.77MiB at   68.60MiB/s ETA 00:00[download]  97.1% of   59.77MiB at   65.88MiB/s ETA 00:00[download]  97.1% of   59.77MiB at  Unknown B/s ETA Unknown[download]  97.1% of   59.77MiB at  Unknown B/s ETA Unknown[download]  97.1% of   59.77MiB at  Unknown B/s ETA Unknown[download]  97.1% of   59.77MiB at  Unknown B/s ETA Unknown[download]  97.1% of   59.77MiB at   29.03MiB/s ETA 00:00  [download]  97.2% of   59.77MiB at   47.11MiB/s ETA 00:00[download]  97.3% of   59.77MiB at   75.91MiB/s ETA 00:00[download]  97.5% of   59.77MiB at   56.16MiB/s ETA 00:00[download]  97.9% of   59.77MiB at   89.80MiB/s ETA 00:00[download]  98.7% of   59.77MiB at   74.27MiB/s ETA 00:00[download] 100.0% of   59.77MiB at   81.05MiB/s ETA 00:00[download] 100% of   59.77MiB in 00:00:01 at 40.05MiB/s  
-[download] Destination: temp_downloads/E4h-8rw2GlY.f251.webm
-[download]   0.0% of   13.17MiB at  Unknown B/s ETA Unknown[download]   0.0% of   13.17MiB at  Unknown B/s ETA Unknown[download]   0.1% of   13.17MiB at    6.67MiB/s ETA 00:01  [download]   0.1% of   13.17MiB at   11.20MiB/s ETA 00:01[download]   0.2% of   13.17MiB at   19.19MiB/s ETA 00:00[download]   0.5% of   13.17MiB at   32.85MiB/s ETA 00:00[download]   0.9% of   13.17MiB at   53.93MiB/s ETA 00:00[download]   1.9% of   13.17MiB at   88.22MiB/s ETA 00:00[download]   3.8% of   13.17MiB at   67.11MiB/s ETA 00:00[download]   7.6% of   13.17MiB at   82.40MiB/s ETA 00:00[download]  15.2% of   13.17MiB at   85.10MiB/s ETA 00:00[download]  30.4% of   13.17MiB at   62.30MiB/s ETA 00:00[download]  60.8% of   13.17MiB at   68.36MiB/s ETA 00:00[download]  72.7% of   13.17MiB at   66.03MiB/s ETA 00:00[download]  72.7% of   13.17MiB at  Unknown B/s ETA Unknown[download]  72.7% of   13.17MiB at  Unknown B/s ETA Unknown[download]  72.8% of   13.17MiB at    5.59MiB/s ETA 00:00  [download]  72.8% of   13.17MiB at    9.13MiB/s ETA 00:00[download]  72.9% of   13.17MiB at   14.82MiB/s ETA 00:00[download]  73.2% of   13.17MiB at   24.81MiB/s ETA 00:00[download]  73.6% of   13.17MiB at   37.43MiB/s ETA 00:00[download]  74.6% of   13.17MiB at   59.80MiB/s ETA 00:00[download]  76.5% of   13.17MiB at   15.03MiB/s ETA 00:00[download]  80.3% of   13.17MiB at   24.91MiB/s ETA 00:00[download]  87.9% of   13.17MiB at   38.69MiB/s ETA 00:00[download] 100.0% of   13.17MiB at   47.48MiB/s ETA 00:00[download] 100% of   13.17MiB in 00:00:00 at 49.56MiB/s  
-[Merger] Merging formats into "temp_downloads/E4h-8rw2GlY.webm"
-Deleting original file temp_downloads/E4h-8rw2GlY.f251.webm (pass -k to keep)
-Deleting original file temp_downloads/E4h-8rw2GlY.f247.webm (pass -k to keep)
-Blocking text...
-ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers
-  built with Apple clang version 15.0.0 (clang-1500.1.0.2.5)
-  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/7.1.1_2 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
-  libavutil      59. 39.100 / 59. 39.100
-  libavcodec     61. 19.101 / 61. 19.101
-  libavformat    61.  7.100 / 61.  7.100
-  libavdevice    61.  3.100 / 61.  3.100
-  libavfilter    10.  4.100 / 10.  4.100
-  libswscale      8.  3.100 /  8.  3.100
-  libswresample   5.  3.100 /  5.  3.100
-  libpostproc    58.  3.100 / 58.  3.100
--vsync is deprecated. Use -fps_mode
-Input #0, matroska,webm, from 'temp_downloads/E4h-8rw2GlY.webm':
-  Metadata:
-    ENCODER         : Lavf61.7.100
-  Duration: 00:18:11.95, start: 0.000000, bitrate: 560 kb/s
-  Stream #0:0(eng): Video: vp9 (Profile 0), yuv420p(tv, smpte170m/smpte170m/bt709), 1280x720, SAR 1:1 DAR 16:9, 30 fps, 30 tbr, 1k tbn (default)
-      Metadata:
-        DURATION        : 00:18:11.900000000
-  Stream #0:1(eng): Audio: opus, 48000 Hz, stereo, fltp (default)
-      Metadata:
-        DURATION        : 00:18:11.948000000
-Stream mapping:
-  Stream #0:0 -> #0:0 (vp9 (native) -> mjpeg (native))
-Press [q] to stop, [?] for help
-Output #0, image2, to '/var/folders/dt/4lhdhmqn74nf75r153x4y8jc0000gq/T/tmpj9fs1f8o/frame_%06d.jpg':
-  Metadata:
-    encoder         : Lavf61.7.100
-  Stream #0:0(eng): Video: mjpeg, yuv420p(pc, smpte170m/smpte170m/bt709, progressive), 640x360 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 30 tbn (default)
-      Metadata:
-        DURATION        : 00:18:11.900000000
-        encoder         : Lavc61.19.101 mjpeg
-      Side data:
-        cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
-frame=   54 fps=0.0 q=2.0 size=N/A time=00:00:53.03 bitrate=N/A speed= 105x    frame=  124 fps=123 q=2.0 size=N/A time=00:02:03.03 bitrate=N/A speed= 122x    frame=  180 fps=119 q=2.0 size=N/A time=00:02:59.03 bitrate=N/A speed= 118x    frame=  229 fps=113 q=2.0 size=N/A time=00:03:48.03 bitrate=N/A speed= 113x    frame=  285 fps=113 q=2.0 size=N/A time=00:04:44.03 bitrate=N/A speed= 113x    frame=  348 fps=115 q=2.0 size=N/A time=00:05:47.03 bitrate=N/A speed= 115x    frame=  409 fps=116 q=2.0 size=N/A time=00:06:48.03 bitrate=N/A speed= 116x    frame=  466 fps=116 q=2.0 size=N/A time=00:07:45.03 bitrate=N/A speed= 115x    frame=  530 fps=117 q=2.0 size=N/A time=00:08:49.03 bitrate=N/A speed= 117x    frame=  590 fps=117 q=2.0 size=N/A time=00:09:49.03 bitrate=N/A speed= 117x    frame=  650 fps=117 q=2.0 size=N/A time=00:10:49.03 bitrate=N/A speed= 117x    frame=  711 fps=118 q=2.0 size=N/A time=00:11:50.03 bitrate=N/A speed= 117x    frame=  778 fps=119 q=2.0 size=N/A time=00:12:57.03 bitrate=N/A speed= 119x    frame=  840 fps=119 q=2.0 size=N/A time=00:13:59.03 bitrate=N/A speed= 119x    frame=  899 fps=119 q=2.0 size=N/A time=00:14:58.03 bitrate=N/A speed= 119x    frame=  961 fps=119 q=2.0 size=N/A time=00:16:00.03 bitrate=N/A speed= 119x    frame= 1026 fps=120 q=2.0 size=N/A time=00:17:05.03 bitrate=N/A speed= 120x    [out#0/image2 @ 0x600001ebc000] video:55503KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
-frame= 1092 fps=122 q=2.0 Lsize=N/A time=00:18:11.03 bitrate=N/A speed= 122x    
-ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers
-  built with Apple clang version 15.0.0 (clang-1500.1.0.2.5)
-  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/7.1.1_2 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
-  libavutil      59. 39.100 / 59. 39.100
-  libavcodec     61. 19.101 / 61. 19.101
-  libavformat    61.  7.100 / 61.  7.100
-  libavdevice    61.  3.100 / 61.  3.100
-  libavfilter    10.  4.100 / 10.  4.100
-  libswscale      8.  3.100 /  8.  3.100
-  libswresample   5.  3.100 /  5.  3.100
-  libpostproc    58.  3.100 / 58.  3.100
-Input #0, matroska,webm, from 'temp_downloads/E4h-8rw2GlY.webm':
-  Metadata:
-    ENCODER         : Lavf61.7.100
-  Duration: 00:18:11.95, start: 0.000000, bitrate: 560 kb/s
-  Stream #0:0(eng): Video: vp9 (Profile 0), yuv420p(tv, smpte170m/smpte170m/bt709), 1280x720, SAR 1:1 DAR 16:9, 30 fps, 30 tbr, 1k tbn (default)
-      Metadata:
-        DURATION        : 00:18:11.900000000
-  Stream #0:1(eng): Audio: opus, 48000 Hz, stereo, fltp (default)
-      Metadata:
-        DURATION        : 00:18:11.948000000
-Stream mapping:
-  Stream #0:0 -> #0:0 (vp9 (native) -> h264 (libx264))
-  Stream #0:1 -> #0:1 (copy)
-Press [q] to stop, [?] for help
-[libx264 @ 0x139a060c0] using SAR=1/1
-[libx264 @ 0x139a060c0] using cpu capabilities: ARMv8 NEON
-[libx264 @ 0x139a060c0] profile High, level 3.1, 4:2:0, 8-bit
-[libx264 @ 0x139a060c0] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=5 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=8 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=50 rc=abr mbtree=1 bitrate=672 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
-[mp4 @ 0x139a04f70] track 1: codec frame size is not set
-Output #0, mp4, to 'output/E4h-8rw2GlY_blocked.mp4':
-  Metadata:
-    encoder         : Lavf61.7.100
-  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, smpte170m/smpte170m/bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 672 kb/s, 30 fps, 15360 tbn (default)
-      Metadata:
-        DURATION        : 00:18:11.900000000
-        encoder         : Lavc61.19.101 libx264
-      Side data:
-        cpb: bitrate max/min/avg: 0/0/672000 buffer size: 0 vbv_delay: N/A
-  Stream #0:1(eng): Audio: opus (Opus / 0x7375704F), 48000 Hz, stereo, fltp (default)
-      Metadata:
-        DURATION        : 00:18:11.948000000
-frame=   13 fps=0.0 q=21.0 size=       0KiB time=00:00:00.36 bitrate=   1.0kbits/s speed=0.732x    frame=   88 fps= 87 q=15.0 size=       0KiB time=00:00:02.86 bitrate=   0.1kbits/s speed=2.85x    frame=  172 fps=114 q=21.0 size=     512KiB time=00:00:05.66 bitrate= 740.2kbits/s speed=3.75x    frame=  250 fps=124 q=23.0 size=     768KiB time=00:00:08.26 bitrate= 761.1kbits/s speed=4.11x    frame=  355 fps=141 q=24.0 size=    1280KiB time=00:00:11.76 bitrate= 891.2kbits/s speed=4.67x    frame=  490 fps=162 q=24.0 size=    1536KiB time=00:00:16.26 bitrate= 773.6kbits/s speed=5.38x    frame=  610 fps=173 q=25.0 size=    2048KiB time=00:00:20.26 bitrate= 827.8kbits/s speed=5.75x    frame=  753 fps=187 q=24.0 size=    2304KiB time=00:00:25.03 bitrate= 754.0kbits/s speed=6.21x    frame=  882 fps=195 q=24.0 size=    2816KiB time=00:00:29.33 bitrate= 786.4kbits/s speed=6.47x    frame= 1027 fps=204 q=22.0 size=    3072KiB time=00:00:34.16 bitrate= 736.6kbits/s speed=6.78x    frame= 1134 fps=205 q=23.0 size=    3584KiB time=00:00:37.73 bitrate= 778.1kbits/s speed=6.81x    frame= 1235 fps=204 q=25.0 size=    3840KiB time=00:00:41.10 bitrate= 765.4kbits/s speed= 6.8x    frame= 1337 fps=204 q=25.0 size=    4352KiB time=00:00:44.50 bitrate= 801.2kbits/s speed= 6.8x    frame= 1487 fps=211 q=24.0 size=    4608KiB time=00:00:49.50 bitrate= 762.6kbits/s speed=7.02x    frame= 1617 fps=214 q=23.0 size=    5120KiB time=00:00:53.83 bitrate= 779.1kbits/s speed=7.13x    frame= 1751 fps=217 q=22.0 size=    5376KiB time=00:00:58.30 bitrate= 755.4kbits/s speed=7.23x    frame= 1883 fps=220 q=22.0 size=    5632KiB time=00:01:02.70 bitrate= 735.8kbits/s speed=7.32x    frame= 2019 fps=223 q=22.0 size=    6144KiB time=00:01:07.23 bitrate= 748.6kbits/s speed=7.41x    frame= 2125 fps=222 q=22.0 size=    6656KiB time=00:01:10.76 bitrate= 770.5kbits/s speed=7.39x    frame= 2260 fps=224 q=22.0 size=    6912KiB time=00:01:15.26 bitrate= 752.3kbits/s speed=7.47x    frame= 2370 fps=224 q=23.0 size=    7424KiB time=00:01:18.96 bitrate= 770.2kbits/s speed=7.46x    frame= 2497 fps=225 q=23.0 size=    7936KiB time=00:01:23.16 bitrate= 781.7kbits/s speed= 7.5x    frame= 2609 fps=225 q=24.0 size=    8192KiB time=00:01:26.90 bitrate= 772.3kbits/s speed=7.49x    frame= 2724 fps=225 q=23.0 size=    8448KiB time=00:01:30.73 bitrate= 762.7kbits/s speed= 7.5x    frame= 2810 fps=223 q=22.0 size=    8704KiB time=00:01:33.60 bitrate= 761.8kbits/s speed=7.43x    frame= 2887 fps=220 q=23.0 size=    8960KiB time=00:01:36.16 bitrate= 763.3kbits/s speed=7.34x    frame= 2954 fps=217 q=22.0 size=    9216KiB time=00:01:38.40 bitrate= 767.3kbits/s speed=7.23x    frame= 3053 fps=216 q=22.0 size=    9472KiB time=00:01:41.70 bitrate= 763.0kbits/s speed= 7.2x    frame= 3156 fps=216 q=22.0 size=    9728KiB time=00:01:45.13 bitrate= 758.0kbits/s speed=7.19x    frame= 3270 fps=216 q=22.0 size=    9984KiB time=00:01:48.93 bitrate= 750.8kbits/s speed= 7.2x    frame= 3359 fps=215 q=22.0 size=   10496KiB time=00:01:51.90 bitrate= 768.4kbits/s speed=7.16x    frame= 3439 fps=213 q=24.0 size=   11008KiB time=00:01:54.56 bitrate= 787.1kbits/s speed= 7.1x    frame= 3562 fps=214 q=24.0 size=   11264KiB time=00:01:58.66 bitrate= 777.6kbits/s speed=7.13x    frame= 3639 fps=212 q=25.0 size=   11776KiB time=00:02:01.23 bitrate= 795.7kbits/s speed=7.07x    frame= 3731 fps=211 q=26.0 size=   12288KiB time=00:02:04.30 bitrate= 809.8kbits/s speed=7.04x    
-Enter command: <target>|all <time>|-1 <command>[ <argument>]
-
-Parse error, at least 3 arguments were expected, only 1 given in string 'sdyjpk'
-frame= 3796 fps=209 q=26.0 size=   12544KiB time=00:02:06.46 bitrate= 812.6kbits/s speed=6.97x    frame= 3869 fps=207 q=27.0 size=   13056KiB time=00:02:08.90 bitrate= 829.8kbits/s speed=6.91x    frame= 3977 fps=207 q=27.0 size=   13312KiB time=00:02:12.50 bitrate= 823.0kbits/s speed=6.91x    frame= 4063 fps=207 q=27.0 size=   13568KiB time=00:02:15.36 bitrate= 821.1kbits/s speed=6.88x    frame= 4164 fps=206 q=27.0 size=   13824KiB time=00:02:18.73 bitrate= 816.3kbits/s speed=6.88x    frame= 4264 fps=206 q=27.0 size=   14080KiB time=00:02:22.06 bitrate= 811.9kbits/s speed=6.87x    frame= 4402 fps=208 q=26.0 size=   14336KiB time=00:02:26.66 bitrate= 800.7kbits/s speed=6.92x    frame= 4514 fps=208 q=26.0 size=   14592KiB time=00:02:30.40 bitrate= 794.8kbits/s speed=6.93x    frame= 4620 fps=208 q=25.0 size=   14848KiB time=00:02:33.93 bitrate= 790.2kbits/s speed=6.94x    frame= 4737 fps=209 q=25.0 size=   15104KiB time=00:02:37.83 bitrate= 783.9kbits/s speed=6.95x    Video: 1280x720 @ 30.00 fps
-Duration: 1091.9s
-OCR resolution: 640x360
-Sampling: every 30 frames (~1.00 fps)
-Extracted 1092 frames for OCR
-OCR: 0/1092 frames, boxes=1
-OCR: 50/1092 frames, boxes=2
-OCR: 100/1092 frames, boxes=1
-OCR: 150/1092 frames, boxes=1
-OCR: 200/1092 frames, boxes=3
-OCR: 250/1092 frames, boxes=4
-OCR: 300/1092 frames, boxes=4
-OCR: 350/1092 frames, boxes=3
-OCR: 400/1092 frames, boxes=4
-OCR: 450/1092 frames, boxes=5
-OCR: 500/1092 frames, boxes=2
-OCR: 550/1092 frames, boxes=2
-OCR: 600/1092 frames, boxes=2
-OCR: 650/1092 frames, boxes=3
-OCR: 700/1092 frames, boxes=3
-OCR: 750/1092 frames, boxes=2
-OCR: 800/1092 frames, boxes=3
-OCR: 850/1092 frames, boxes=3
-OCR: 900/1092 frames, boxes=1
-OCR: 950/1092 frames, boxes=0
-OCR: 1000/1092 frames, boxes=0
-OCR: 1050/1092 frames, boxes=0
-Encoding with high quality, filters=584
-Done: output/E4h-8rw2GlY_blocked.mp4
-
-=== Processing 2/68: wx1ozRk ===
-Downloading...
-[youtube:truncated_id] Extracting URL: https://www.youtube.com/watch?v=wx1ozRk
-ERROR: [youtube:truncated_id] wx1ozRk: Incomplete YouTube ID wx1ozRk. URL https://www.youtube.com/watch?v=wx1ozRk looks truncated.
-Download failed, skipping...
-
-=== Processing 3/68: o_Hx0olxYx0 ===
-Downloading...
-[youtube] Extracting URL: https://www.youtube.com/watch?v=o_Hx0olxYx0
-[youtube] o_Hx0olxYx0: Downloading webpage
-[youtube] o_Hx0olxYx0: Downloading tv client config
-[youtube] o_Hx0olxYx0: Downloading player 721caf0b-main
-[youtube] o_Hx0olxYx0: Downloading tv player API JSON
-[youtube] o_Hx0olxYx0: Downloading android sdkless player API JSON
-[youtube] [jsc:deno] Solving JS challenges using deno
-[info] o_Hx0olxYx0: Downloading 1 format(s): 136+251
-[download] Sleeping 5.00 seconds as required by the site...
-[download] Destination: temp_downloads/o_Hx0olxYx0.f136.mp4
-[download]   0.0% of   54.63MiB at  843.92KiB/s ETA 01:07[download]   0.0% of   54.63MiB at    1.36MiB/s ETA 00:40[download]   0.0% of   54.63MiB at    2.58MiB/s ETA 00:21[download]   0.0% of   54.63MiB at    4.59MiB/s ETA 00:11[download]   0.1% of   54.63MiB at    4.18MiB/s ETA 00:13[download]   0.1% of   54.63MiB at    4.18MiB/s ETA 00:13[download]   0.2% of   54.63MiB at    6.50MiB/s ETA 00:08[download]   0.5% of   54.63MiB at    8.82MiB/s ETA 00:06[download]   0.9% of   54.63MiB at   13.08MiB/s ETA 00:04[download]   1.8% of   54.63MiB at   20.36MiB/s ETA 00:02[download]   3.7% of   54.63MiB at   30.52MiB/s ETA 00:01[download]   7.3% of   54.63MiB at   37.03MiB/s ETA 00:01[download]  14.6% of   54.63MiB at   45.96MiB/s ETA 00:01[download]  17.7% of   54.63MiB at   48.01MiB/s ETA 00:00[download]  17.7% of   54.63MiB at  Unknown B/s ETA Unknown[download]  17.7% of   54.63MiB at    2.75MiB/s ETA 00:16  [download]  17.7% of   54.63MiB at    3.74MiB/s ETA 00:12[download]  17.7% of   54.63MiB at    5.37MiB/s ETA 00:08[download]  17.7% of   54.63MiB at    8.09MiB/s ETA 00:05[download]  17.8% of   54.63MiB at   13.05MiB/s ETA 00:03[download]  17.9% of   54.63MiB at   20.83MiB/s ETA 00:02[download]  18.1% of   54.63MiB at   31.76MiB/s ETA 00:01[download]  18.6% of   54.63MiB at   15.22MiB/s ETA 00:02[download]  19.5% of   54.63MiB at   25.06MiB/s ETA 00:01[download]  21.3% of   54.63MiB at   36.89MiB/s ETA 00:01[download]  25.0% of   54.63MiB at   48.59MiB/s ETA 00:00[download]  32.3% of   54.63MiB at   56.20MiB/s ETA 00:00[download]  35.1% of   54.63MiB at   59.17MiB/s ETA 00:00[download]  35.1% of   54.63MiB at  Unknown B/s ETA Unknown[download]  35.1% of   54.63MiB at  Unknown B/s ETA Unknown[download]  35.1% of   54.63MiB at    6.20MiB/s ETA 00:05  [download]  35.1% of   54.63MiB at    9.55MiB/s ETA 00:03[download]  35.1% of   54.63MiB at   14.55MiB/s ETA 00:02[download]  35.2% of   54.63MiB at   22.95MiB/s ETA 00:01[download]  35.3% of   54.63MiB at   36.63MiB/s ETA 00:00[download]  35.5% of   54.63MiB at   57.39MiB/s ETA 00:00[download]  36.0% of   54.63MiB at   86.04MiB/s ETA 00:00[download]  36.9% of   54.63MiB at   23.78MiB/s ETA 00:01[download]  38.7% of   54.63MiB at   37.17MiB/s ETA 00:00[download]  42.4% of   54.63MiB at   34.99MiB/s ETA 00:00[download]  49.7% of   54.63MiB at   42.03MiB/s ETA 00:00[download]  52.7% of   54.63MiB at   45.39MiB/s ETA 00:00[download]  52.7% of   54.63MiB at  Unknown B/s ETA Unknown[download]  52.7% of   54.63MiB at  Unknown B/s ETA Unknown[download]  52.7% of   54.63MiB at    5.03MiB/s ETA 00:05  [download]  52.7% of   54.63MiB at    7.26MiB/s ETA 00:03[download]  52.8% of   54.63MiB at   10.90MiB/s ETA 00:02[download]  52.8% of   54.63MiB at   16.19MiB/s ETA 00:01[download]  52.9% of   54.63MiB at   23.70MiB/s ETA 00:01[download]  53.2% of   54.63MiB at   38.92MiB/s ETA 00:00[download]  53.6% of   54.63MiB at   65.30MiB/s ETA 00:00[download]  54.6% of   54.63MiB at   70.33MiB/s ETA 00:00[download]  56.4% of   54.63MiB at   47.62MiB/s ETA 00:00[download]  60.0% of   54.63MiB at   54.08MiB/s ETA 00:00[download]  67.4% of   54.63MiB at   43.13MiB/s ETA 00:00[download]  70.2% of   54.63MiB at   46.23MiB/s ETA 00:00[download]  70.2% of   54.63MiB at  Unknown B/s ETA Unknown[download]  70.2% of   54.63MiB at    1.24MiB/s ETA 00:13  [download]  70.2% of   54.63MiB at    2.11MiB/s ETA 00:07[download]  70.2% of   54.63MiB at    3.45MiB/s ETA 00:04[download]  70.2% of   54.63MiB at    5.79MiB/s ETA 00:02[download]  70.3% of   54.63MiB at    9.89MiB/s ETA 00:01[download]  70.4% of   54.63MiB at   17.58MiB/s ETA 00:00[download]  70.6% of   54.63MiB at   31.02MiB/s ETA 00:00[download]  71.1% of   54.63MiB at   54.17MiB/s ETA 00:00[download]  72.0% of   54.63MiB at   80.04MiB/s ETA 00:00[download]  73.8% of   54.63MiB at   27.19MiB/s ETA 00:00[download]  77.5% of   54.63MiB at   38.81MiB/s ETA 00:00[download]  84.8% of   54.63MiB at   47.87MiB/s ETA 00:00[download]  87.8% of   54.63MiB at   50.99MiB/s ETA 00:00[download]  87.8% of   54.63MiB at  Unknown B/s ETA Unknown[download]  87.8% of   54.63MiB at  Unknown B/s ETA Unknown[download]  87.8% of   54.63MiB at    5.00MiB/s ETA 00:01  [download]  87.9% of   54.63MiB at    6.06MiB/s ETA 00:01[download]  87.9% of   54.63MiB at   10.18MiB/s ETA 00:00[download]  87.9% of   54.63MiB at   17.35MiB/s ETA 00:00[download]  88.1% of   54.63MiB at   29.07MiB/s ETA 00:00[download]  88.3% of   54.63MiB at   34.40MiB/s ETA 00:00[download]  88.7% of   54.63MiB at   56.41MiB/s ETA 00:00[download]  89.7% of   54.63MiB at   73.97MiB/s ETA 00:00[download]  91.5% of   54.63MiB at   73.46MiB/s ETA 00:00[download]  95.2% of   54.63MiB at   72.16MiB/s ETA 00:00[download] 100.0% of   54.63MiB at   54.15MiB/s ETA 00:00[download] 100% of   54.63MiB in 00:00:01 at 41.72MiB/s  
-[download] Destination: temp_downloads/o_Hx0olxYx0.f251.webm
-[download]   0.0% of   12.05MiB at  Unknown B/s ETA Unknown[download]   0.0% of   12.05MiB at    2.60MiB/s ETA 00:04  [download]   0.1% of   12.05MiB at    4.52MiB/s ETA 00:02[download]   0.1% of   12.05MiB at    7.80MiB/s ETA 00:01[download]   0.3% of   12.05MiB at   12.81MiB/s ETA 00:00[download]   0.5% of   12.05MiB at   22.18MiB/s ETA 00:00[download]   1.0% of   12.05MiB at   31.90MiB/s ETA 00:00[download]   2.1% of   12.05MiB at   44.76MiB/s ETA 00:00[download]   4.1% of   12.05MiB at   74.20MiB/s ETA 00:00[download]   8.3% of   12.05MiB at   68.30MiB/s ETA 00:00[download]  16.6% of   12.05MiB at   78.06MiB/s ETA 00:00[download]  33.2% of   12.05MiB at   64.55MiB/s ETA 00:00[download]  66.4% of   12.05MiB at   66.96MiB/s ETA 00:00[download]  82.5% of   12.05MiB at   51.38MiB/s ETA 00:00[download]  82.5% of   12.05MiB at  Unknown B/s ETA Unknown[download]  82.5% of   12.05MiB at    2.13MiB/s ETA 00:00  [download]  82.6% of   12.05MiB at    3.35MiB/s ETA 00:00[download]  82.6% of   12.05MiB at    5.42MiB/s ETA 00:00[download]  82.8% of   12.05MiB at    8.93MiB/s ETA 00:00[download]  83.0% of   12.05MiB at   14.04MiB/s ETA 00:00[download]  83.6% of   12.05MiB at   19.67MiB/s ETA 00:00[download]  84.6% of   12.05MiB at   29.68MiB/s ETA 00:00[download]  86.7% of   12.05MiB at   48.20MiB/s ETA 00:00[download]  90.8% of   12.05MiB at   78.50MiB/s ETA 00:00[download]  99.1% of   12.05MiB at   74.51MiB/s ETA 00:00[download] 100.0% of   12.05MiB at   72.86MiB/s ETA 00:00[download] 100% of   12.05MiB in 00:00:00 at 39.83MiB/s  
-[Merger] Merging formats into "temp_downloads/o_Hx0olxYx0.mkv"
-Deleting original file temp_downloads/o_Hx0olxYx0.f251.webm (pass -k to keep)
-Deleting original file temp_downloads/o_Hx0olxYx0.f136.mp4 (pass -k to keep)
-Blocking text...
-ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers
-  built with Apple clang version 15.0.0 (clang-1500.1.0.2.5)
-  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/7.1.1_2 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
-  libavutil      59. 39.100 / 59. 39.100
-  libavcodec     61. 19.101 / 61. 19.101
-  libavformat    61.  7.100 / 61.  7.100
-  libavdevice    61.  3.100 / 61.  3.100
-  libavfilter    10.  4.100 / 10.  4.100
-  libswscale      8.  3.100 /  8.  3.100
-  libswresample   5.  3.100 /  5.  3.100
-  libpostproc    58.  3.100 / 58.  3.100
--vsync is deprecated. Use -fps_mode
-Input #0, matroska,webm, from 'temp_downloads/o_Hx0olxYx0.mkv':
-  Metadata:
-    COMPATIBLE_BRANDS: iso6avc1mp41
-    MAJOR_BRAND     : dash
-    MINOR_VERSION   : 0
-    ENCODER         : Lavf61.7.100
-  Duration: 00:13:24.41, start: 0.000000, bitrate: 694 kb/s
-  Stream #0:0: Video: h264 (High), yuv420p(tv, smpte170m/smpte170m/bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 1k tbn (default)
-      Metadata:
-        HANDLER_NAME    : ISO Media file produced by Google Inc.
-        VENDOR_ID       : [0][0][0][0]
-        DURATION        : 00:13:24.366000000
-  Stream #0:1(eng): Audio: opus, 48000 Hz, stereo, fltp (default)
-      Metadata:
-        DURATION        : 00:13:24.408000000
-Stream mapping:
-  Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
-Press [q] to stop, [?] for help
-Output #0, image2, to '/var/folders/dt/4lhdhmqn74nf75r153x4y8jc0000gq/T/tmpvm4feki5/frame_%06d.jpg':
-  Metadata:
-    COMPATIBLE_BRANDS: iso6avc1mp41
-    MAJOR_BRAND     : dash
-    MINOR_VERSION   : 0
-    encoder         : Lavf61.7.100
-  Stream #0:0: Video: mjpeg, yuv420p(pc, smpte170m/smpte170m/bt709, progressive), 640x360 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 30 tbn (default)
-      Metadata:
-        HANDLER_NAME    : ISO Media file produced by Google Inc.
-        VENDOR_ID       : [0][0][0][0]
-        DURATION        : 00:13:24.366000000
-        encoder         : Lavc61.19.101 mjpeg
-      Side data:
-        cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
-frame=   55 fps=0.0 q=2.0 size=N/A time=00:00:54.03 bitrate=N/A speed= 107x    frame=  110 fps=109 q=2.0 size=N/A time=00:01:49.03 bitrate=N/A speed= 108x    frame=  177 fps=117 q=2.0 size=N/A time=00:02:56.03 bitrate=N/A speed= 116x    frame=  235 fps=116 q=2.0 size=N/A time=00:03:54.03 bitrate=N/A speed= 116x    frame=  301 fps=119 q=2.0 size=N/A time=00:05:00.03 bitrate=N/A speed= 119x    frame=  366 fps=121 q=2.0 size=N/A time=00:06:05.03 bitrate=N/A speed= 121x    frame=  432 fps=122 q=2.0 size=N/A time=00:07:11.03 bitrate=N/A speed= 122x    frame=  495 fps=123 q=2.0 size=N/A time=00:08:14.03 bitrate=N/A speed= 122x    frame=  554 fps=122 q=2.0 size=N/A time=00:09:13.03 bitrate=N/A speed= 122x    frame=  611 fps=121 q=2.0 size=N/A time=00:10:10.03 bitrate=N/A speed= 121x    frame=  672 fps=121 q=2.0 size=N/A time=00:11:11.03 bitrate=N/A speed= 121x    frame=  734 fps=121 q=2.0 size=N/A time=00:12:13.03 bitrate=N/A speed= 121x    frame=  795 fps=121 q=2.0 size=N/A time=00:13:14.03 bitrate=N/A speed= 121x    [out#0/image2 @ 0x600000f9c0c0] video:40350KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
-frame=  805 fps=122 q=2.0 Lsize=N/A time=00:13:24.03 bitrate=N/A speed= 122x    
-ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers
-  built with Apple clang version 15.0.0 (clang-1500.1.0.2.5)
-  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/7.1.1_2 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox --enable-neon
-  libavutil      59. 39.100 / 59. 39.100
-  libavcodec     61. 19.101 / 61. 19.101
-  libavformat    61.  7.100 / 61.  7.100
-  libavdevice    61.  3.100 / 61.  3.100
-  libavfilter    10.  4.100 / 10.  4.100
-  libswscale      8.  3.100 /  8.  3.100
-  libswresample   5.  3.100 /  5.  3.100
-  libpostproc    58.  3.100 / 58.  3.100
-Input #0, matroska,webm, from 'temp_downloads/o_Hx0olxYx0.mkv':
-  Metadata:
-    COMPATIBLE_BRANDS: iso6avc1mp41
-    MAJOR_BRAND     : dash
-    MINOR_VERSION   : 0
-    ENCODER         : Lavf61.7.100
-  Duration: 00:13:24.41, start: 0.000000, bitrate: 694 kb/s
-  Stream #0:0: Video: h264 (High), yuv420p(tv, smpte170m/smpte170m/bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 1k tbn (default)
-      Metadata:
-        HANDLER_NAME    : ISO Media file produced by Google Inc.
-        VENDOR_ID       : [0][0][0][0]
-        DURATION        : 00:13:24.366000000
-  Stream #0:1(eng): Audio: opus, 48000 Hz, stereo, fltp (default)
-      Metadata:
-        DURATION        : 00:13:24.408000000
-Stream mapping:
-  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
-  Stream #0:1 -> #0:1 (copy)
-Press [q] to stop, [?] for help
-[libx264 @ 0x135607200] using SAR=1/1
-[libx264 @ 0x135607200] using cpu capabilities: ARMv8 NEON
-[libx264 @ 0x135607200] profile High, level 3.1, 4:2:0, 8-bit
-[libx264 @ 0x135607200] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=5 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=8 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=50 rc=abr mbtree=1 bitrate=832 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
-[mp4 @ 0x135606820] track 1: codec frame size is not set
-Output #0, mp4, to 'output/o_Hx0olxYx0_blocked.mp4':
-  Metadata:
-    COMPATIBLE_BRANDS: iso6avc1mp41
-    MAJOR_BRAND     : dash
-    MINOR_VERSION   : 0
-    encoder         : Lavf61.7.100
-  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, smpte170m/smpte170m/bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 832 kb/s, 30 fps, 15360 tbn (default)
-      Metadata:
-        HANDLER_NAME    : ISO Media file produced by Google Inc.
-        VENDOR_ID       : [0][0][0][0]
-        DURATION        : 00:13:24.366000000
-        encoder         : Lavc61.19.101 libx264
-      Side data:
-        cpb: bitrate max/min/avg: 0/0/832000 buffer size: 0 vbv_delay: N/A
-  Stream #0:1(eng): Audio: opus (Opus / 0x7375704F), 48000 Hz, stereo, fltp (default)
-      Metadata:
-        DURATION        : 00:13:24.408000000
-frame=   59 fps=0.0 q=13.0 size=       0KiB time=00:00:01.90 bitrate=   0.2kbits/s speed=3.78x    frame=  145 fps=144 q=24.0 size=     512KiB time=00:00:04.76 bitrate= 880.0kbits/s speed=4.73x    frame=  238 fps=157 q=29.0 size=    1024KiB time=00:00:07.86 bitrate=1066.4kbits/s speed= 5.2x    frame=  342 fps=170 q=28.0 size=    1536KiB time=00:00:11.33 bitrate=1110.3kbits/s speed=5.63x    frame=  452 fps=180 q=27.0 size=    1792KiB time=00:00:15.00 bitrate= 978.7kbits/s speed=5.96x    frame=  559 fps=185 q=26.0 size=    2048KiB time=00:00:18.56 bitrate= 903.6kbits/s speed=6.15x    frame=  685 fps=194 q=23.0 size=    2304KiB time=00:00:22.76 bitrate= 829.1kbits/s speed=6.46x    frame=  800 fps=199 q=24.0 size=    2560KiB time=00:00:26.60 bitrate= 788.4kbits/s speed= 6.6x    frame=  907 fps=200 q=21.0 size=    3072KiB time=00:00:30.16 bitrate= 834.2kbits/s speed=6.66x    frame= 1027 fps=204 q=20.0 size=    3584KiB time=00:00:34.16 bitrate= 859.3kbits/s speed=6.79x    frame= 1120 fps=202 q=21.0 size=    4096KiB time=00:00:37.26 bitrate= 900.4kbits/s speed=6.73x    frame= 1221 fps=202 q=21.0 size=    4352KiB time=00:00:40.63 bitrate= 877.4kbits/s speed=6.72x    frame= 1309 fps=200 q=23.0 size=    4608KiB time=00:00:43.56 bitrate= 866.5kbits/s speed=6.66x    frame= 1413 fps=200 q=20.0 size=    5120KiB time=00:00:47.03 bitrate= 891.8kbits/s speed=6.67x    frame= 1534 fps=203 q=19.0 size=    5376KiB time=00:00:51.06 bitrate= 862.4kbits/s speed=6.76x    frame= 1600 fps=199 q=20.0 size=    5888KiB time=00:00:53.26 bitrate= 905.5kbits/s speed=6.61x    frame= 1691 fps=198 q=22.0 size=    6400KiB time=00:00:56.30 bitrate= 931.2kbits/s speed=6.58x    frame= 1746 fps=193 q=25.0 size=    7168KiB time=00:00:58.13 bitrate=1010.1kbits/s speed=6.42x    frame= 1804 fps=189 q=27.0 size=    7680KiB time=00:01:00.06 bitrate=1047.4kbits/s speed=6.28x    frame= 1909 fps=190 q=27.0 size=    7936KiB time=00:01:03.56 bitrate=1022.7kbits/s speed=6.31x    frame= 2001 fps=189 q=27.0 size=    8448KiB time=00:01:06.63 bitrate=1038.6kbits/s speed= 6.3x    frame= 2085 fps=188 q=27.0 size=    8704KiB time=00:01:09.43 bitrate=1026.9kbits/s speed=6.27x    frame= 2185 fps=189 q=26.0 size=    8960KiB time=00:01:12.76 bitrate=1008.7kbits/s speed=6.29x    
-Enter command: <target>|all <time>|-1 <command>[ <argument>]
-
-Parse error, at least 3 arguments were expected, only 1 given in string 'UTYWc1KkM8'
-frame= 2297 fps=190 q=26.0 size=    9472KiB time=00:01:16.50 bitrate=1014.3kbits/s speed=6.33x    frame= 2401 fps=191 q=26.0 size=    9728KiB time=00:01:19.96 bitrate= 996.6kbits/s speed=6.35x    frame= 2533 fps=194 q=25.0 size=    9984KiB time=00:01:24.36 bitrate= 969.5kbits/s speed=6.45x    frame= 2644 fps=194 q=24.0 size=   10496KiB time=00:01:28.06 bitrate= 976.3kbits/s speed=6.48x    frame= 2737 fps=194 q=25.0 size=   10752KiB time=00:01:31.16 bitrate= 966.2kbits/s speed=6.46x    frame= 2849 fps=195 q=24.0 size=   11264KiB time=00:01:34.90 bitrate= 972.3kbits/s speed= 6.5x    frame= 2927 fps=194 q=25.0 size=   11520KiB time=00:01:37.50 bitrate= 967.9kbits/s speed=6.45x    frame= 3063 fps=196 q=23.0 size=   11776KiB time=00:01:42.03 bitrate= 945.5kbits/s speed=6.53x    frame= 3181 fps=197 q=22.0 size=   12032KiB time=00:01:45.96 bitrate= 930.2kbits/s speed=6.57x    frame= 3321 fps=200 q=21.0 size=   12288KiB time=00:01:50.63 bitrate= 909.9kbits/s speed=6.65x    frame= 3409 fps=199 q=22.0 size=   12544KiB time=00:01:53.56 bitrate= 904.9kbits/s speed=6.63x    frame= 3523 fps=200 q=20.0 size=   13056KiB time=00:01:57.36 bitrate= 911.3kbits/s speed=6.65x    frame= 3659 fps=202 q=20.0 size=   13312KiB time=00:02:01.90 bitrate= 894.6kbits/s speed=6.72x    frame= 3740 fps=201 q=19.0 size=   13824KiB time=00:02:04.60 bitrate= 908.9kbits/s speed=6.68x    frame= 3839 fps=200 q=20.0 size=   14080KiB time=00:02:07.90 bitrate= 901.8kbits/s speed=6.68x    frame= 3922 fps=200 q=20.0 size=   14592KiB time=00:02:10.66 bitrate= 914.8kbits/s speed=6.65x    frame= 4031 fps=200 q=20.0 size=   15104KiB time=00:02:14.30 bitrate= 921.3kbits/s speed=6.66x    frame= 4132 fps=200 q=20.0 size=   15360KiB time=00:02:17.66 bitrate= 914.0kbits/s speed=6.66x    frame= 4200 fps=198 q=21.0 size=   15872KiB time=00:02:19.93 bitrate= 929.2kbits/s speed=6.61x    frame= 4293 fps=198 q=21.0 size=   16384KiB time=00:02:23.03 bitrate= 938.4kbits/s speed= 6.6x    frame= 4381 fps=198 q=21.0 size=   16640KiB time=00:02:25.96 bitrate= 933.9kbits/s speed=6.58x    frame= 4446 fps=196 q=22.0 size=   16896KiB time=00:02:28.13 bitrate= 934.4kbits/s speed=6.53x    frame= 4543 fps=196 q=22.0 size=   17408KiB time=00:02:31.36 bitrate= 942.1kbits/s speed=6.53x    
-Enter command: <target>|all <time>|-1 <command>[ <argument>]
-
-Parse error, at least 3 arguments were expected, only -1 given in string ''
-frame= 4659 fps=197 q=22.0 size=   17664KiB time=00:02:35.23 bitrate= 932.2kbits/s speed=6.55x    frame= 4760 fps=197 q=21.0 size=   18176KiB time=00:02:38.60 bitrate= 938.8kbits/s speed=6.56x    frame= 4878 fps=198 q=21.0 size=   18432KiB time=00:02:42.53 bitrate= 929.0kbits/s speed=6.58x    frame= 4975 fps=197 q=21.0 size=   18944KiB time=00:02:45.76 bitrate= 936.2kbits/s speed=6.58x    frame= 5088 fps=198 q=21.0 size=   19456KiB time=00:02:49.53 bitrate= 940.1kbits/s speed= 6.6x    
-Enter command: <target>|all <time>|-1 <command>[ <argument>]
-
-Parse error, at least 3 arguments were expected, only 1 given in string 'QcQw'
-
-Enter command: <target>|all <time>|-1 <command>[ <argument>]
-
-Video: 1280x720 @ 30.00 fps
-Duration: 804.4s
-OCR resolution: 640x360
-Sampling: every 30 frames (~1.00 fps)
-Extracted 805 frames for OCR
-OCR: 0/805 frames, boxes=1
-OCR: 50/805 frames, boxes=1
-OCR: 100/805 frames, boxes=4
-OCR: 150/805 frames, boxes=4
-OCR: 200/805 frames, boxes=4
-OCR: 250/805 frames, boxes=4
-OCR: 300/805 frames, boxes=3
-OCR: 350/805 frames, boxes=3
-OCR: 400/805 frames, boxes=1
-OCR: 450/805 frames, boxes=2
-OCR: 500/805 frames, boxes=1
-OCR: 550/805 frames, boxes=1
-OCR: 600/805 frames, boxes=1
-OCR: 650/805 frames, boxes=1
-OCR: 700/805 frames, boxes=1
-OCR: 750/805 frames, boxes=1
-OCR: 800/805 frames, boxes=1
-Encoding with high quality, filters=425
