@@ -8,10 +8,12 @@ builds time-ranged drawbox filters for ffmpeg.
 import argparse
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
 import tempfile
+import unicodedata
 from pathlib import Path
 from typing import Optional
 
@@ -213,8 +215,31 @@ def is_youtube_url(value: str) -> bool:
     return lower.startswith(("http://", "https://")) and ("youtube.com" in lower or "youtu.be" in lower)
 
 
-def resolve_youtube_id(url: str, verbose: bool) -> str:
-    cmd = ["yt-dlp", "--no-playlist", "--print", "id", url]
+def is_valid_youtube_id(value: str) -> bool:
+    return re.match(r"^[A-Za-z0-9_-]{11}$", value) is not None
+
+
+def sanitize_filename(value: str, max_len: int = 120) -> str:
+    normalized = unicodedata.normalize("NFKD", value or "")
+    ascii_text = normalized.encode("ascii", "ignore").decode("ascii")
+    ascii_text = ascii_text.strip()
+    ascii_text = re.sub(r"[^\w\-. ]+", "", ascii_text)
+    ascii_text = re.sub(r"\s+", "_", ascii_text)
+    ascii_text = re.sub(r"_+", "_", ascii_text).strip("._- ")
+    if not ascii_text:
+        return "video"
+    return ascii_text[:max_len]
+
+
+def build_output_filename(title: str, video_id: str) -> str:
+    safe_title = sanitize_filename(title)
+    if not safe_title or safe_title.lower() == video_id.lower():
+        return f"{video_id}_blocked.mp4"
+    return f"{safe_title}_{video_id}_blocked.mp4"
+
+
+def resolve_youtube_metadata(url: str, verbose: bool) -> tuple[str, str]:
+    cmd = ["yt-dlp", "--no-playlist", "--print", "%(id)s\t%(title)s", url]
     if not verbose:
         cmd += ["--quiet", "--no-warnings"]
     result = subprocess.run(cmd, capture_output=True, text=True)
@@ -224,7 +249,15 @@ def resolve_youtube_id(url: str, verbose: bool) -> str:
     ids = [line.strip() for line in result.stdout.splitlines() if line.strip()]
     if not ids:
         raise RuntimeError("yt-dlp did not return a video id")
-    return ids[-1]
+    last = ids[-1]
+    if "\t" in last:
+        video_id, title = last.split("\t", 1)
+    else:
+        video_id, title = last, ""
+    video_id = video_id.strip()
+    if not is_valid_youtube_id(video_id):
+        raise RuntimeError(f"Invalid YouTube id: {video_id}")
+    return video_id, title.strip()
 
 
 def find_downloaded_file(temp_dir: str, video_id: str) -> Optional[Path]:
@@ -237,15 +270,31 @@ def find_downloaded_file(temp_dir: str, video_id: str) -> Optional[Path]:
     return max(candidates, key=lambda p: p.stat().st_size)
 
 
-def fetch_playlist_ids(playlist_url: str, verbose: bool) -> list[str]:
-    cmd = ["yt-dlp", "--flat-playlist", "--print", "%(id)s", playlist_url]
+def fetch_playlist_entries(playlist_url: str, verbose: bool) -> list[tuple[str, str]]:
+    cmd = ["yt-dlp", "--flat-playlist", "--print", "%(id)s\t%(title)s", playlist_url]
     if not verbose:
         cmd += ["--quiet", "--no-warnings"]
     result = subprocess.run(cmd, capture_output=True, text=True)
     if result.returncode != 0:
         err = result.stderr.strip() or "yt-dlp failed to fetch playlist"
         raise RuntimeError(err)
-    return [line.strip() for line in result.stdout.splitlines() if line.strip()]
+    entries = []
+    for line in result.stdout.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        if "\t" in line:
+            video_id, title = line.split("\t", 1)
+        else:
+            video_id, title = line, ""
+        video_id = video_id.strip()
+        title = title.strip()
+        if not is_valid_youtube_id(video_id):
+            if verbose:
+                print(f"Skipping invalid video id: {video_id}")
+            continue
+        entries.append((video_id, title))
+    return entries
 
 
 def download_video(
@@ -274,9 +323,9 @@ def download_youtube_url(
     download_format: str,
     merge_format: Optional[str],
     verbose: bool,
-) -> tuple[str, Optional[Path]]:
-    video_id = resolve_youtube_id(url, verbose=verbose)
-    return video_id, download_video(
+) -> tuple[str, str, Optional[Path]]:
+    video_id, title = resolve_youtube_metadata(url, verbose=verbose)
+    return video_id, title, download_video(
         video_id,
         temp_dir=temp_dir,
         download_format=download_format,
@@ -313,16 +362,17 @@ def process_playlist(
     output_path.mkdir(parents=True, exist_ok=True)
     temp_path.mkdir(parents=True, exist_ok=True)
 
-    video_ids = fetch_playlist_ids(playlist_url, verbose=verbose)
-    if not video_ids:
+    entries = fetch_playlist_entries(playlist_url, verbose=verbose)
+    if not entries:
         print("No videos found in playlist")
         return
 
-    total = len(video_ids)
-    for idx, video_id in enumerate(video_ids, 1):
-        print(f"\n=== Processing {idx}/{total}: {video_id} ===")
+    total = len(entries)
+    for idx, (video_id, title) in enumerate(entries, 1):
+        label = title if title else video_id
+        print(f"\n=== Processing {idx}/{total}: {label} ({video_id}) ===")
 
-        output_file = output_path / f"{video_id}_blocked.mp4"
+        output_file = output_path / build_output_filename(title, video_id)
         if skip_existing and output_file.exists():
             print("Already processed, skipping...")
             continue
@@ -467,7 +517,7 @@ def process_youtube_video(
     output_file: Path
 
     print("Downloading...")
-    video_id, input_file = download_youtube_url(
+    video_id, title, input_file = download_youtube_url(
         url,
         temp_dir=temp_dir,
         download_format=download_format,
@@ -478,7 +528,7 @@ def process_youtube_video(
         raise RuntimeError("Download failed")
 
     if output_path.exists() and output_path.is_dir():
-        output_file = output_path / f"{video_id}_blocked.mp4"
+        output_file = output_path / build_output_filename(title, video_id)
     else:
         output_file = output_path
 
